@@ -5,7 +5,7 @@ import {
   MapPin,
   GraduationCap,
   ArrowUpRight,
-  Sparkles,
+  Heart,
 } from "lucide-react";
 
 /*
