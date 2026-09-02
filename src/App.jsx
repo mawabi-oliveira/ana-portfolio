@@ -57,7 +57,7 @@ const projects = [
   {
     name: "Próximo projeto",
     tag: "Em construção",
-    desc: "Este espaço é reservado para o próximo projeto — em breve, mais um case por aqui.",
+    desc: "Este espaço é reservado para o próximo projeto, em breve, mais um case por aqui.",
     stack: [],
     href: null,
     accent: "#C9B6F0",
