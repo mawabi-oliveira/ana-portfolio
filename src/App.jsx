@@ -498,7 +498,7 @@ function Hero() {
           Buscando novas oportunidades
         </div>
         <h1 style={{ fontFamily: "Fraunces, serif", color: "#F3EEFA", lineHeight: 1.08 }} className="text-5xl sm:text-6xl mb-6">
-          Ana Oliveira
+          Ana
           <br />
           <span style={{ color: "#C9B6F0" }}>Oliveira</span>
         </h1>
