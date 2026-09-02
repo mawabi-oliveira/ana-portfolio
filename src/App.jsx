@@ -49,10 +49,10 @@ const projects = [
     {
     name: "Mobile Lens",
     tag: "Aplicação full-stack",
-    desc: "Site guia, criado juntamente do meu amigo Pedro Cleyvid, para quem fotografa com celular: aplicativos de edição, comparativo de câmeras e dicas práticas de fotografia noturna, com área de login para os usuários.",
+    desc: "Site guia para quem fotografa com celular: aplicativos de edição, comparativo de câmeras e dicas práticas de fotografia noturna, com área de login para os usuários.",
     stack: ["React Vite React Router Tailwind CSS"],
     href: "https://github.com/mawabi-oliveira/mobilelens",
-    accent: "#F3C7B4",
+    accent: "#C9B6F0",
   },
   {
     name: "Próximo projeto",
@@ -384,7 +384,7 @@ function Nav() {
     <header className="sticky top-0 z-20 backdrop-blur-md" style={{ backgroundColor: "#17131FCC" }}>
       <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-5">
         <a href="#topo" style={{ fontFamily: "Fraunces, serif", color: "#F3EEFA" }} className="text-lg tracking-tight">
-          Ana Mawabi
+          Ana Oliveira
         </a>
         <nav className="hidden sm:flex items-center gap-8">
           {links.map((l) => (
@@ -498,7 +498,7 @@ function Hero() {
           Buscando novas oportunidades
         </div>
         <h1 style={{ fontFamily: "Fraunces, serif", color: "#F3EEFA", lineHeight: 1.08 }} className="text-5xl sm:text-6xl mb-6">
-          Ana Mawabi
+          Ana Oliveira
           <br />
           <span style={{ color: "#C9B6F0" }}>Oliveira</span>
         </h1>
@@ -573,7 +573,7 @@ function Sobre() {
           desenvolvimento web, automações corporativas e testes de software.
           Já atuei em projetos acadêmicos e institucionais usando JavaScript,
           TypeScript, Node.js, bancos de dados relacionais e não relacionais
-          e Microsoft Power Platform . Além disso, estou em constante aprendizado.
+          e Microsoft Power Platform. Além disso, estou em constante aprendizado.
         </p>
         <p style={{ color: "#A79BC0", fontFamily: "Sora, sans-serif" }} className="leading-relaxed">
           Tenho experiência no desenvolvimento de aplicações internas,
@@ -785,7 +785,7 @@ function Contato() {
         </div>
       </TiltCard>
       <p style={{ color: "#6E6480", fontFamily: "Sora, sans-serif" }} className="text-center text-xs mt-10">
-        Ana Mawabi Oliveira · Maceió, AL
+        Ana Oliveira · Maceió, AL
       </p>
     </Reveal>
   );
