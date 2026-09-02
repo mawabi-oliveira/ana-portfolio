@@ -378,6 +378,7 @@ function Nav() {
     { label: "Experiência", id: "experiencia" },
     { label: "Habilidades", id: "habilidades" },
     { label: "Projetos", id: "projetos" },
+    { label: "Hobbies", id: "hobbies" },
     { label: "Contato", id: "contato" },
   ];
   return (
@@ -526,7 +527,7 @@ function Hero() {
         </div>
       </div>
 
-      <div
+           <div
         className="sm:col-span-2 relative h-72 sm:h-96"
         style={{ perspective: "800px" }}
         onMouseMove={onMove}
@@ -547,15 +548,38 @@ function Hero() {
             }}
           />
           <svg viewBox="0 0 300 300" className="absolute inset-0 w-full h-full">
-            <circle data-depth="-4" cx="150" cy="150" r="90" fill="none" stroke="#C9B6F055" strokeWidth="1" style={{ transition: "transform 0.2s ease-out" }} />
-            <circle data-depth="-8" cx="150" cy="150" r="60" fill="none" stroke="#F3C7B455" strokeWidth="1" style={{ transition: "transform 0.2s ease-out" }} />
-            <text data-depth="14" x="90" y="130" fontFamily="Fraunces, serif" fontSize="46" fill="#C9B6F0" style={{ transition: "transform 0.2s ease-out" }}>{"{"}</text>
-            <text data-depth="18" x="185" y="180" fontFamily="Fraunces, serif" fontSize="46" fill="#F3C7B4" style={{ transition: "transform 0.2s ease-out" }}>{"}"}</text>
-            <circle data-depth="22" cx="150" cy="150" r="4" fill="#A9E0C8" style={{ transition: "transform 0.2s ease-out" }} />
-            <circle data-depth="10" cx="105" cy="95" r="3" fill="#F3EEFA" style={{ transition: "transform 0.2s ease-out" }} />
-            <circle data-depth="16" cx="205" cy="205" r="3" fill="#F3EEFA" style={{ transition: "transform 0.2s ease-out" }} />
-            <circle data-depth="12" cx="220" cy="100" r="2.5" fill="#A9E0C8" style={{ transition: "transform 0.2s ease-out" }} />
-            <circle data-depth="8" cx="80" cy="210" r="2.5" fill="#C9B6F0" style={{ transition: "transform 0.2s ease-out" }} />
+            {/* anéis decorativos, herdados do visual original */}
+            <circle data-depth="-4" cx="150" cy="150" r="95" fill="none" stroke="#C9B6F055" strokeWidth="1" style={{ transition: "transform 0.2s ease-out" }} />
+            <circle data-depth="-8" cx="150" cy="150" r="65" fill="none" stroke="#F3C7B455" strokeWidth="1" style={{ transition: "transform 0.2s ease-out" }} />
+
+            {/* corpo do controle, estilo pro controller, desenhado em linha */}
+            <g data-depth="14" style={{ transition: "transform 0.2s ease-out" }}>
+              <rect x="78" y="118" width="144" height="68" rx="32" fill="none" stroke="#F3EEFA" strokeWidth="2" />
+
+              {/* analógico esquerdo */}
+              <circle cx="112" cy="152" r="16" fill="none" stroke="#F3EEFA" strokeWidth="2" />
+              <circle cx="112" cy="152" r="4" fill="#A9E0C8" />
+
+              {/* cruzeta direcional */}
+              <rect x="196" y="140" width="8" height="24" rx="2" fill="#F3EEFA" />
+              <rect x="188" y="148" width="24" height="8" rx="2" fill="#F3EEFA" />
+
+              {/* botão central (home) */}
+              <circle cx="150" cy="152" r="3" fill="#6EE7F2" />
+
+              {/* botões de ação, em losango */}
+              <circle cx="140" cy="136" r="5" fill="#C9B6F0" />
+              <circle cx="140" cy="168" r="5" fill="#A9E0C8" />
+              <circle cx="124" cy="152" r="5" fill="#F3C7B4" />
+              <circle cx="156" cy="152" r="5" fill="#6EE7F2" />
+            </g>
+
+            {/* pixels/partículas flutuantes, tipo power-up */}
+            <rect data-depth="20" x="60" y="70" width="6" height="6" fill="#A9E0C8" style={{ transition: "transform 0.2s ease-out" }} />
+            <rect data-depth="10" x="225" y="90" width="5" height="5" fill="#C9B6F0" style={{ transition: "transform 0.2s ease-out" }} />
+            <rect data-depth="16" x="70" y="215" width="5" height="5" fill="#F3C7B4" style={{ transition: "transform 0.2s ease-out" }} />
+            <rect data-depth="8" x="220" y="210" width="6" height="6" fill="#6EE7F2" style={{ transition: "transform 0.2s ease-out" }} />
+            <circle data-depth="22" cx="150" cy="235" r="3" fill="#F3EEFA" style={{ transition: "transform 0.2s ease-out" }} />
           </svg>
         </div>
       </div>
@@ -748,6 +772,84 @@ function Projetos() {
   );
 }
 
+const hobbies = ["Leitura", "Escrita", "Música", "Instrumentos", "Games", "Animes", "Nintendo"];
+
+const gallery = [
+  { src: "/hobbies/nintendo-clube.jpg", alt: "Mesa cheia de Nintendo Switch, 3DS e controles no Clube Nintendo Café MCZ", caption: "Nintendo Café MCZ", accent: "#A9E0C8" },
+  { src: "/hobbies/cinema.jpg", alt: "Sala de cinema durante os créditos de um filme japonês", caption: "Sessão de cinema", accent: "#F3C7B4" },
+  { src: "/hobbies/praia.jpg", alt: "Praia à noite com coqueiros e luzes da cidade ao fundo", caption: "Fim de tarde na praia", accent: "#C9B6F0" },
+  { src: "/hobbies/passeio.jpg", alt: "Passeio noturno de bicicleta por uma praça movimentada", caption: "Pedalada por aí", accent: "#6EE7F2" },
+];
+
+function ForaDoCodigo() {
+  return (
+    <Reveal id="hobbies" className="max-w-5xl mx-auto px-6 py-20">
+      <h2 style={{ fontFamily: "Fraunces, serif", color: "#F3EEFA" }} className="text-3xl mb-10">
+        Fora do código
+      </h2>
+
+      <div className="grid sm:grid-cols-5 gap-10 mb-12">
+        <div className="sm:col-span-2">
+          <TiltCard
+            accent="#C9B6F0"
+            className="rounded-3xl overflow-hidden"
+            style={{ border: "1px solid #2A2438", aspectRatio: "4 / 5" }}
+          >
+            <img
+              src="/hobbies/perfil.jpg"
+              alt="Retrato de Ana Oliveira"
+              className="w-full h-full object-cover"
+              style={{ display: "block" }}
+            />
+          </TiltCard>
+        </div>
+
+        <div className="sm:col-span-3 flex flex-col justify-center">
+          <p style={{ color: "#A79BC0", fontFamily: "Sora, sans-serif" }} className="leading-relaxed mb-6">
+            Sou uma pessoa eclética: divido meu tempo entre livros, escrita, música e jogos.
+            Também toco instrumentos e sou apaixonada por animes, no fim, gosto de qualquer
+            coisa que me ensine algo novo. Faço parte do Clube de Nintendo, onde encontro outras
+            pessoas apaixonadas por games para trocar ideias e jogar juntas.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {hobbies.map((h) => (
+              <Pill key={h} color="#F3C7B4">{h}</Pill>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="grid sm:grid-cols-4 gap-5">
+        {gallery.map((g) => (
+          <TiltCard
+            key={g.src}
+            accent={g.accent}
+            className="rounded-2xl overflow-hidden"
+            style={{ backgroundColor: "#1F1A2B", border: "1px solid #2A2438" }}
+          >
+            <div style={{ aspectRatio: "4 / 3", overflow: "hidden" }}>
+              <img
+                src={g.src}
+                alt={g.alt}
+                className="w-full h-full object-cover"
+                style={{ display: "block", transition: "transform 0.4s ease" }}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              />
+            </div>
+            <p
+              style={{ color: "#A79BC0", fontFamily: "Sora, sans-serif" }}
+              className="text-xs px-3 py-3"
+            >
+              {g.caption}
+            </p>
+          </TiltCard>
+        ))}
+      </div>
+    </Reveal>
+  );
+}
+
 function Contato() {
   return (
     <Reveal id="contato" className="max-w-5xl mx-auto px-6 py-24">
@@ -801,6 +903,7 @@ export default function AnaPortfolio() {
       <Experiencia />
       <Habilidades />
       <Projetos />
+      <ForaDoCodigo />
       <Contato />
     </div>
   );

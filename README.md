@@ -1,4 +1,4 @@
-# Portfólio — Ana Mawabi Oliveira
+# Portfólio — Ana Oliveira
 
 Site pessoal feito em React + Vite + Tailwind CSS.
 
