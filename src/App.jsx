@@ -749,7 +749,7 @@ function Contato() {
         style={{ background: "linear-gradient(135deg, #1F1A2B 0%, #241E33 100%)", border: "1px solid #2A2438" }}
       >
         <div>
-          <Sparkles size={24} style={{ color: "#C9B6F0" }} className="mx-auto mb-5" />
+          <Heart size={24} style={{ color: "#C9B6F0" }} className="mx-auto mb-5" />
           <h2 style={{ fontFamily: "Fraunces, serif", color: "#F3EEFA" }} className="text-3xl sm:text-4xl mb-4">Vamos conversar</h2>
           <p style={{ color: "#A79BC0", fontFamily: "Sora, sans-serif", maxWidth: "40ch" }} className="mx-auto mb-8">
             Se você tem um projeto, uma vaga ou só quer conversar acerca de tecnologia, entra em contato comigo.
