@@ -46,6 +46,14 @@ const projects = [
     href: "https://github.com/mawabi-oliveira/MobyPersonal",
     accent: "#F3C7B4",
   },
+    {
+    name: "Mobile Lens",
+    tag: "Aplicação full-stack",
+    desc: "Site guia, criado juntamente do meu amigo Pedro Cleyvid, para quem fotografa com celular: aplicativos de edição, comparativo de câmeras e dicas práticas de fotografia noturna, com área de login para os usuários.",
+    stack: ["React Vite React Router Tailwind CSS"],
+    href: "https://github.com/mawabi-oliveira/mobilelens",
+    accent: "#F3C7B4",
+  },
   {
     name: "Próximo projeto",
     tag: "Em construção",
