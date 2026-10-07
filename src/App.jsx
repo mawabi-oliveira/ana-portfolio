@@ -56,12 +56,12 @@ const projects = [
   },
     {
     name: "Kurumi",
-    tag: "Projeto em equipe · Técnico em Desenvolvimento de Sistemas, IFAL"",
+    tag: "Projeto em equipe · Técnico em Desenvolvimento de Sistemas, IFAL",
     desc: "Jogo estilo Wordle com palavras em Tupi: 6 tentativas para descobrir a palavra de 5 letras. Dá para jogar como convidado, com cadastro e login opcionais.",
-    stack: ["React TypeScript Tailwind CSS Node.js Express SQLite JWT."],
+    stack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "SQLite", "JWT"],
     href: "https://github.com/mawabi-oliveira/kurumi",
     accent: "#A9E0C8",
-  },
+    },
   {
     name: "Próximo projeto",
     tag: "Em construção",
