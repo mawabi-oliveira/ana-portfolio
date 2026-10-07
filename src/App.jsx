@@ -54,6 +54,14 @@ const projects = [
     href: "https://github.com/mawabi-oliveira/mobilelens",
     accent: "#C9B6F0",
   },
+    {
+    name: "Kurumi",
+    tag: "Aplicação full-stack",
+    desc: "Jogo estilo Wordle com palavras em Tupi. Você tem 6 tentativas para descobrir a palavra de 5 letras. O jogo funciona direto, como convidado, e o cadastro/login é opcional.",
+    stack: ["React 18, TypeScript, Vite, Tailwind CSS, React Router5, Node.js 22, Express 5, Sequelize, SQLite, JWT, bcrypt, Swagger, Jest e Supertest"],
+    href: "https://github.com/mawabi-oliveira/kurumi",
+    accent: "#C9B6F0",
+  },
   {
     name: "Próximo projeto",
     tag: "Em construção",
